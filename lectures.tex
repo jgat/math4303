@@ -1,0 +1,57 @@
+\documentclass[a4paper]{report}
+
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[lmargin=3cm,rmargin=3cm]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+  \titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\setlength{\unitlength}{1cm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\bbH}{\mathbb{H}}
+\newcommand{\bbO}{\mathbb{O}}
+\newcommand{\angleb}[1]{\langle #1 \rangle}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+
+\newcommand{\thisurl}{http://jgat.github.io/math4303-notes/lectures.pdf}
+\newcommand{\sourceurl}{https://github.com/jgat/math4303-notes}
+
+\title{MATH4303 Lecture Notes}
+\author{Lectures by Diane Donovan\\
+Notes taken by Jackson Gatenby\\
+\\
+MATH4303 Advanced Combinatorics\\
+The University of Queensland\\
+\\
+Version 0.1.0}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+
+\input{notes/lec1}
+
+\appendix
+\chapter{Appendix}
+\input{notes/history}
+
+\end{document}

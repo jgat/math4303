@@ -1,0 +1,36 @@
+\section{Basic Definitions}
+
+Recall that a {\em group} is a pair $(G, \cdot)$, where $G$ is a set, and
+$\cdot: G \times G \to G$ is a closed binary operator (let $gh = g \cdot h$),
+such that:
+\begin{enumerate}
+  \item $\forall g, h \in G, g \cdot h \in G$ (closure)
+  \item $\forall g, h, k \in G, (g \cdot h) \cdot k = g \cdot (h \cdot k)$
+  (associativity)
+  \item $\exists e \in G: \forall g \in G, eg = g = ge$ (identity
+  element)
+  \item $\forall g \in G, \exists g^{-1} \in G: gg^{-1} = e = g^{-1}g$ (inverse
+  elements)
+\end{enumerate}
+If the operator is commutative ($\forall g, h \in G, gh = hg$), the group is
+abelian.
+Recall that a {\em ring} is a 3-tuple $(R, +, \times)$ such that:
+\begin{enumerate}
+  \item $(R, +)$ is an abelian group with identity $0$,
+  \item $(R \setminus \{0\}, \times)$ is closed, associative, and has identity
+  $1$,
+  \item $\forall g, h, k \in R$, left- and right-distributivity hold: $g \times
+  (h + k) = (g \times h) + (g \times k)$, $(h + k) \times g = (h \times g) +
+  (k \times g)$
+\end{enumerate}
+
+Let $(R, +, \times)$ and $(S, \star, \cdot)$ be rings, let $1_R$, $1_S$ denote
+the multiplicative identities of $R, S$ respectively. A {\em ring homomorphism}
+is a function $f: R \to S$ such that:
+\begin{enumerate}
+  \item $f(a+b) = f(a) \star f(b)$
+  \item $f(a \times b) = f(a) \cdot f(b)$
+  \item $f(1_R) = f(1_S)$
+\end{enumerate}
+If $f$ is bijective, then $f$ is said to be a {\em ring isomorphism}, and $R, S$
+are isomorphic.
